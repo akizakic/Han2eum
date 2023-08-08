@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#BDE3FF"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        android:textSize="34sp"
+        android:textColor="#333333"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="사용자 이름"
+        android:inputType="text"
+        android:background="@drawable/edit_text_bg"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="이메일"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/edit_text_bg"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="비밀번호"
+        android:inputType="textPassword"
+        android:background="@drawable/edit_text_bg"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/editTextCarnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="차량번호"
+        android:inputType="text"
+        android:background="@drawable/edit_text_bg"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#FF5722"
+        android:textColor="#FFFFFF"
+        android:text="회원 가입"
+        android:layout_gravity="center"
+        android:onClick="onSignUpClick"/>
+</LinearLayout>
