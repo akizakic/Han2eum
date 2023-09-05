@@ -1,0 +1,68 @@
+<!-- activity_review.xml -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BDE3FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- 평가점수 라디오 버튼 그룹 -->
+        <RadioGroup
+            android:id="@+id/radioGroupRating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioExcellent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="매우 만족" />
+
+            <RadioButton
+                android:id="@+id/radioGood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="만족" />
+
+            <RadioButton
+                android:id="@+id/radioAverage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="보통" />
+
+            <RadioButton
+                android:id="@+id/radioPoor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="불만족" />
+
+        </RadioGroup>
+
+        <!-- 리뷰 내용 입력 -->
+        <EditText
+            android:id="@+id/etReview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="리뷰를 작성해주세요"
+            android:inputType="textMultiLine"
+            android:minLines="4" />
+
+
+        <!-- 작성 버튼 -->
+        <Button
+            android:id="@+id/btnWriteReview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="작성"
+            android:textAllCaps="false"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edit_text_bg"/>
+
+    </LinearLayout>
+</ScrollView>

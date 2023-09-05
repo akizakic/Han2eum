@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:weightSum="1"
+    android:background="#BDE3FF"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="end"
+        >
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back3" />
+        <ImageButton
+        android:layout_gravity="right"
+        android:id="@+id/homeButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/home2" />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="환영합니다!"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        />
+    <View
+        android:layout_weight="0.3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        />
+    <Button
+        android:id="@+id/findpark"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:text="주차장 찾기"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edit_text_bg"
+        />
+
+
+    <Button
+        android:id="@+id/reservation"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:text="예약하기"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edit_text_bg"
+        />
+
+    <Button
+        android:id="@+id/search_num"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:text="차량번호 조회"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edit_text_bg"
+        />
+
+    <Button
+        android:id="@+id/review"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:text="리뷰"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edit_text_bg"
+        />
+
+
+
+
+
+</LinearLayout>
